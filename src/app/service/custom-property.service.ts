@@ -1,4 +1,5 @@
 ﻿import { Injectable } from '@angular/core';
+import { CustomPropertyServiceInterface } from './custom-property.interface.service';
 
 /**
  * The custom property service is used to make working with custom properties easier.
@@ -6,7 +7,7 @@
  * them when working with controls.
  */
 @Injectable()
-export class CustomPropertyService {
+export class CustomPropertyService implements CustomPropertyServiceInterface {
 
   /**
    * Indicates whether a given control contains a specified custom property
